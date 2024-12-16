@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Noto+Sans+JP:wght@100..900&family=Playwrite+DK+Loopet:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    --cl--1--: #ffffff;
+    --cl--2--: #14171f;
+    --cl--3--: #151564;
+    --cl--4--: #F7A900;
+    --cl--5--: #007BFF;
+    --cl--6--: #ECBB4E;
+
+    background: var(--cl--1--);
+    font-family: popp;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 74px;
+}
+
+h2{
+    font-size: 64px
+}
+
+h3{
+    font-size: 54px;
+}
+
+h4{
+    font-size: 44px;
+}
+
+h5 {
+    font-size: 34px;
+}
+
+h6 {
+    font-size: 24px;
+}
+
+a{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* HEADER */
+
+header{
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+
+    display: flex;
+    width: 100%;
+    height: 114px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+header ul li{
+    padding: 10px 30px;
+    position: relative;
+}
+
+header ul li a{
+    text-decoration: none;
+    transition: all 0.3s;
+    color: var(--cl--3--);
+}
+
+header ul li a:hover{
+    color: var(--cl--4--);
+}
+
+.dropdown-menu{
+    display: none;
+}
+
+header ul li:hover .dropdown-menu{
+
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--cl--1--);
+}
+
+header ul li:hover .dropdown-menu ul{
+    display: block;
+    margin: 10px;
+}
+
+.dropdown-menu ul li{
+    width: 150px;
+    padding: 10px;
+}
+
+/* END HEADER */
+
+/* HERO */
+
+
+.hero {
+    background-image: linear-gradient(rgba(9,9,54,0.3), rgba(5,4,46,0.7)), url("GAMBAR/GEDUNG_TI.jpeg ");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 700px;
+    align-items: center;
+    background-color: var(--cl--3--);
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 1900px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-position: left 35%;
+    
+}
+
+.hero .hero-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+
+
+}
+
+.hero .hero-title h4{
+    color: var(--cl--4--);
+    margin: 0;
+}
+
+.hero .hero-title h6{
+    margin-top: 5px;
+    color: var(--cl--1--);
+    
+}
+
+.hero .hero-visi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 350px;
+    
+
+}
+
+.hero .hero-visi h6{
+    color: var(--cl--4--);
+    margin: 0;
+}
+
+.hero .hero-visi p{
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    text-align: center;
+    color: var(--cl--1--);
+}
+
+/* END HERO */
+
+/* AGENDA */
+.agenda {
+
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 5%;
+    box-sizing: border-box;
+ 
+}
+
+.agenda-header{
+    max-width: 2000px;
+
+}
+
+.agenda-header{
+
+    margin-top: 3%;
+
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: var(--cl--4--);
+}
+
+.agenda h6{
+    margin-left: 2%;
+}
+
+
+.agenda-wrapper{
+
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+ 
+ 
+
+}
+
+.agenda-box{
+    background-color: var(--cl--1--);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    border-radius: 8px;
+
+
+}
+
+.box-date{
+    background-color: var(--cl--3--);
+    margin: 35px;
+
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 250px;
+    text-align: center;
+    justify-content: center;
+
+    border-radius: 8px;
+}
+
+.agenda-day{
+    height: 50px;
+}
+.agenda-day h3{
+    margin: 0;
+    padding: 0;
+    color: var(--cl--1--);
+}
+
+.agenda-month h3{
+    margin: 0;
+    padding: 0;
+    color: var(--cl--4--);
+}
+
+
+.agenda-content{
+
+    display: flex;
+    flex-direction: column ;
+    text-align: left;
+    height: 150px;
+
+}
+
+.agenda-title h6{
+    padding: 0;
+    margin: 0;
+}
+
+.agenda-time h6{
+    padding: 0;
+    margin-top: 47px;
+}
+
+/* END AGENDA */
+
+/* NEWS ACADEMIC */
+.news-academic{
+
+    display: flex;
+    flex-direction: column;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 5%;
+    box-sizing: border-box;
+    margin-top: 3%;
+    height: 1300px;
+    
+}
+
+.header-wrapper{
+ 
+    display: flex;
+    height: 50px;
+    justify-content: center;
+
+}
+
+.news-header{
+
+    width: 1400px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    background-color: var(--cl--4--);
+ 
+}
+
+.news-header h6{
+    margin: 0;
+    margin-left: 2%;
+}
+
+.academica-header{
+ 
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cl--4--);
+}
+
+.academica-header h6{
+    margin: 0;
+}
+
+.content-wrapper{
+    margin-top: 3%;
+  
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+
+/* NEWS */
+
+.news-box-wrapper{
+  
+    width: 1400px;
+    margin-right: 30px;
+    grid-gap: 30px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2,1fr)
+}
+   
+
+.news-box{
+  
+    height: 575px;
+    width: auto;;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--cl--1--);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+.news-image-1{
+ 
+    height: 250px;
+    background-image: url(GAMBAR/baksos.jpg);
+    background-size: cover;
+}
+
+.news-image-2{
+  
+    height: 250px;
+    background-image: url(GAMBAR/ITCC2.jpg);
+    background-size: cover;
+}
+
+.news-image-3{
+  
+    height: 250px;
+    background-image: url(GAMBAR/itversary.jpg);
+    background-size: cover;
+}
+
+.news-image-4{
+  
+    height: 250px;
+    background-image: url(GAMBAR/AI.jpg);
+    background-size: cover;
+}
+
+.news-content{
+    padding: 2%;
+    height: 300px;
+}
+
+.news-content h5{
+    color: var(--cl--4--);
+    
+}
+
+.news-content p{
+    text-align: justify;
+}
+
+.news-date-content{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    height: 59px;
+    justify-content: flex-end;
+    padding-left: 2%;
+
+}
+
+.news-date{
+   
+    color: var(--cl--3--);
+    font-weight: bold;
+    padding-bottom: 1%;
+  
+}
+
+/* END NEWS */
+
+
+/* ACADEMIC */
+
+.academic-wrapper{
+    background-color: var(--cl--3--);
+    width: 650px;
+    height: 1190px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 28px;
+  
+}
+
+.dosen-box{
+    margin: 5%;
+    border-radius: 24px;
+    background-color: var(--cl--1--);
+  
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly ;
+    align-items: center;
+}
+
+.academic-content{
+ 
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.academic-title{
+   
+    justify-content: center;
+}
+
+.academic-image{
+   
+    width: 400px;
+    height: 400px;
+    background-image: url(GAMBAR/lulusan\'.jpg);
+    background-size: cover;
+   
+}
+
+.dosen-image{
+
+    width: 400px;
+    height: 400px;
+    background-image: url(GAMBAR/dosen.jpg);
+    background-size: cover
+}
+
+.academica-box{
+    
+    margin: 5%;
+    padding-top: 0;
+    background-color: var(--cl--1--);
+   
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly ;
+    align-items: center;
+    border-radius: 24px;
+}
+
+.academic-see-more{
+    display: flex;
+    padding-left: 7%;
+  
+}
+
+
+/* END ACADEMIC */
+
+.academic-see-more{
+    color: var(--cl--5--);
+}
+
+/* END NEWS ACADEMIC */
+
+/* AKREDITASI */
+.acreditation{
+    border: 1px solid black;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 5%;
+    box-sizing: border-box;
+
+}
+
+
+
+.acreditation-header{
+    border: 1px solid black;
+    margin-top: 3%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: var(--cl--4--);
+}
+
+.acreditation-wrapper{
+    padding-top: 3%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.acreditation-image-wrapper{
+   
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-between;
+}
+
+.acreditation-image-1{
+    border: 1px solid black;
+    width: 810px;
+    height: 500px;
+}
+
+.acreditation-image-2{
+    border: 1px solid black;
+    width: 810px;
+    height: 500px;
+    background-image: url(GAMBAR/Sertifikat-Akreditasi-TI.jpg);
+    background-size: cover;
+}
+
+.acreditation-content{
+    padding-top: 3%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 60px;
+    
+    
+
+}
+
+.acreditation-content-1{
+    background-color: var(--cl--3--);
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.acreditation-content-2{
+    
+    background-color: var(--cl--3--);
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.acreditation-content-1 h5{
+    color: var(--cl--4--);
+}
+
+.acreditation-content-2 h5{
+    color: var(--cl--4--);
+}
+
+
+
+
+/* END AKREDITASI */
+/* MEDSIA */
+
+/* END MEDIUA */

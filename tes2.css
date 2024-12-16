@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+.agenda-container {
+    background-color: #fdb913;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.agenda-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+.see-more {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+}
+.agenda-cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 410px;
+    height: 155px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+.card img {
+    border-radius: 10px;
+}
+.date {
+    background-color: #002d72;
+    color: #fdb913;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 10px;
+    width: 135px;
+    height: 135px;
+}
+.date .day {
+    font-size: 24px;
+    font-weight: bold;
+}
+.date .month {
+    font-size: 18px;
+    font-weight: bold;
+}
+.details {
+    flex-grow: 1;
+}
+.details .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.details .time {
+    font-size: 16px;
+    color: #666;
+}
+.details .time i {
+    color: #ff0000;
+    margin-right: 5px;
+}
+@media (max-width: 768px) {
+    .agenda-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+    }
+}
