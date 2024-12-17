@@ -191,7 +191,7 @@ header ul li:hover .dropdown-menu ul{
 
 /* CONTENT */
 
-.content{
+.main-content{
     max-width: 2000px;
     margin: 0 auto;
     padding: 0 10%;
@@ -209,12 +209,12 @@ header ul li:hover .dropdown-menu ul{
 }
 
 .box-wrapper{
-    border: 1px solid red;
+ 
     margin-top: 3%;
 }
 
 .box{
-    border: 1px solid black;
+   
     height: 500px;
     margin-bottom: 5%;
 }
