@@ -135,8 +135,9 @@ header ul li:hover .dropdown-menu ul{
     padding: 0;
     margin: 0;
     background-repeat: no-repeat;
-    width: 100%;
-    max-width: 1900px;
+    background-size: cover;
+ 
+    max-width: 2400px;
     margin: 0 auto;
     padding: 0 15px;
     background-position: left 35%;
@@ -193,7 +194,7 @@ header ul li:hover .dropdown-menu ul{
 
     max-width: 2000px;
     margin: 0 auto;
-    padding: 0 5%;
+    padding: 0 10%;
     box-sizing: border-box;
  
 }
@@ -242,7 +243,7 @@ header ul li:hover .dropdown-menu ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 550px;
+    width: 500px;
     border-radius: 8px;
 
 
@@ -254,8 +255,8 @@ header ul li:hover .dropdown-menu ul{
 
     display: flex;
     flex-direction: column;
-    height: 200px;
-    width: 250px;
+    height: 150px;
+    width: 200px;
     text-align: center;
     justify-content: center;
 
@@ -306,7 +307,7 @@ header ul li:hover .dropdown-menu ul{
     flex-direction: column;
     max-width: 2000px;
     margin: 0 auto;
-    padding: 0 5%;
+    padding: 0 10%;
     box-sizing: border-box;
     margin-top: 3%;
     height: 1300px;
@@ -540,7 +541,7 @@ header ul li:hover .dropdown-menu ul{
    
     max-width: 2000px;
     margin: 0 auto;
-    padding: 0 5%;
+    padding: 0 10%;
     box-sizing: border-box;
 
 }
@@ -568,9 +569,9 @@ header ul li:hover .dropdown-menu ul{
 
 .acreditation-wrapper{
     padding-top: 3%;
- 
     display: flex;
     flex-direction: column;
+    justify-content:space-evenly;
 }
 
 .acreditation-image-wrapper{
@@ -582,7 +583,7 @@ header ul li:hover .dropdown-menu ul{
 
 .acreditation-image-1{
  
-    width: 810px;
+    width: 700px;
     height: 500px;
     background-image: url(GAMBAR/TI_BANPT_2018-2023\ \(Akreditasi\ b\)_page-0001.jpg);
     background-size: cover;
@@ -591,7 +592,7 @@ header ul li:hover .dropdown-menu ul{
 
 .acreditation-image-2{
 
-    width: 810px;
+    width: 700px;
     height: 500px;
     background-image: url(GAMBAR/Sertifikat-Akreditasi-TI.jpg);
     background-size: cover;
@@ -730,7 +731,7 @@ header ul li:hover .dropdown-menu ul{
 }
 
 .facility-content{
-    border: 1px solid black;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -754,21 +755,21 @@ header ul li:hover .dropdown-menu ul{
 
 .statistic{
 
-    max-width: 2000px;
+    max-width: 2400px;
     margin: 0 auto;
     padding: 0 5%;
     box-sizing: border-box;
   
     background-image:  linear-gradient(rgba(13, 13, 87, 0.3), rgba(71, 69, 165, 0.7)), url("GAMBAR/GEDUNG_TI.jpeg ");
+    background-size: cover;
     
-    border: 1px solid pink;
     margin-top: 5%;
     height: 800px;
     background-repeat: no-repeat;
 }
 
 .statistic-wrapper{
-    border: 1px solid black;
+  
     height: 800px;
     display: flex;
     flex-direction: row;
@@ -780,7 +781,6 @@ header ul li:hover .dropdown-menu ul{
 
 .statistic-box{
    
-    border: 1px solid black;
     height: 600px;
     width: 400px;
     background-color: var(--cl--1--);
@@ -814,6 +814,153 @@ header ul li:hover .dropdown-menu ul{
 }
 
 /* END STATISTIK */
+
+/* FOOTER */
+
+.footer{
+    margin: 0 auto;
+    max-width: 2400px;
+
+    box-sizing: border-box;
+   
+    margin-top: 5%;
+    background-color: var(--cl--3--);
+   
+}
+
+.top-layer{
+  
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    max-width: 2800px;
+
+  
+    
+}
+
+.top-left-section{
+
+   
+    width: 810px;
+    margin: 1% auto;
+}
+
+.top-left-section p{
+    font-weight: bold;
+    color: var(--cl--1--);
+}
+
+.top-right-section{
+    margin: 0 auto;
+
+    width: 810px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding-left: 10%;
+}
+
+
+.socmed-logo{
+   
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socmed-logo-item div {
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.socmed-logo-1{
+
+  
+    width: 80px;
+    height: 80px;
+    background-image: url(GAMBAR/twitter_3256013.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.socmed-logo-2{
+    
+    width: 80px;
+    height: 80px;
+    background-image: url(GAMBAR/ig.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.socmed-logo-3{
+  
+    width: 80px;
+    height: 80px;
+    background-image: url(GAMBAR/youtube.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.socmed-logo-4{
+    
+    width: 80px;
+    height: 80px;
+    background-image: url(GAMBAR/facebook.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.top-right-content h6{
+    color: var(--cl--1--);
+    margin-bottom: 3%;
+    
+}
+
+.bottom-layer{
+   
+    height: 50px;
+    display: flex;
+
+    max-width: 2800px;
+    background-color: var(--cl--4--);
+   
+}
+
+
+.bot-left-section{
+
+    width: 810px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+}
+
+
+.bot-right-section{
+
+    width: 810px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* END FOOTER */
+
 
 /* MEDSIA */
 

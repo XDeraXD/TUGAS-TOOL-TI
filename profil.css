@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Noto+Sans+JP:wght@100..900&family=Playwrite+DK+Loopet:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    --cl--1--: #ffffff;
+    --cl--2--: #14171f;
+    --cl--3--: #151564;
+    --cl--4--: #F7A900;
+    --cl--5--: #007BFF;
+    --cl--6--: #ECBB4E;
+
+    background: var(--cl--1--);
+    font-family: popp;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 74px;
+}
+
+h2{
+    font-size: 64px
+}
+
+h3{
+    font-size: 54px;
+}
+
+h4{
+    font-size: 44px;
+}
+
+h5 {
+    font-size: 34px;
+}
+
+h6 {
+    font-size: 24px;
+}
+
+a{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* HEADER */
+
+header{
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+
+    display: flex;
+    width: 100%;
+    height: 114px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+header ul li{
+    padding: 10px 30px;
+    position: relative;
+}
+
+header ul li a{
+    text-decoration: none;
+    transition: all 0.3s;
+    color: var(--cl--3--);
+}
+
+header ul li a:hover{
+    color: var(--cl--4--);
+}
+
+.dropdown-menu{
+    display: none;
+}
+
+header ul li:hover .dropdown-menu{
+
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--cl--1--);
+}
+
+header ul li:hover .dropdown-menu ul{
+    display: block;
+    margin: 10px;
+}
+
+.dropdown-menu ul li{
+    width: 200px;
+    padding: 10px;
+}
+
+/* END HEADER */
+
+/* HERO */
+
+
+.hero {
+    background-image: linear-gradient(rgba(9,9,54,0.3), rgba(5,4,46,0.7)), url("GAMBAR/GEDUNG_TI.jpeg ");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 700px;
+    align-items: center;
+    background-color: var(--cl--3--);
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+    max-width: 2400px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-position: left 35%;
+    
+}
+
+.hero .hero-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+
+
+}
+
+.hero .hero-title h1{
+    color: var(--cl--4--);
+    margin: 0;
+}
+
+.hero .hero-title h6{
+    margin-top: 5px;
+    color: var(--cl--1--);
+    
+}
+/* END HERO */
+
+/* VISI */
+.visi{
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+.visi-header{
+    max-width: 350px;
+    margin-top: 3%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: var(--cl--4--);
+    justify-content: center;
+}
+
+.visi-header h6{
+    margin-left: 2%;
+}
+
+.visi-content-box{
+    margin-top: 3%;
+
+    height: fit-content;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.visi-content{
+
+    text-align: justify;
+    padding: 1% 2%;
+    line-height: 2;
+}
+/* END MVSI */
+
+/* MISI */
+.misi{
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+.misi-header{
+    max-width: 350px;
+    margin-top: 3%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: var(--cl--4--);
+    justify-content: center;
+    align-content: center;
+}
+
+.misi-header h6{
+    margin-left: 2%;
+}
+
+.misi-content-box{
+    margin-top: 3%;
+    height: fit-content;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  
+}
+
+.misi-content{
+    text-align: justify;
+    padding: 1% 3%;
+    line-height: 2;
+}
+
+/* END MISI */
+
+
+/* TUJUAN */
+
+.tujuan{
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+.tujuan-header{
+    max-width: 350px;
+    margin-top: 3%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: var(--cl--4--);
+    justify-content: center;
+}
+
+.tujuan-header h6{
+    margin-left: 2%;
+}
+
+.tujuan-content-box{
+    margin-top: 3%;
+    height: fit-content;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  
+}
+
+.tujuan-content{
+    text-align: justify;
+    padding: 1% 2%;
+    line-height: 2;
+}
+
+.tujuan-content ol{
+    padding-left: 4%;
+}
+/* END TUJUAN */
+
+
+/* PEJABAT AKADEMIK */
+
+.pejabat{
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+.pejabat-header{
+    max-width: 2000px;
+    margin-top: 3%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: var(--cl--4--);
+    justify-content: center;
+}
+
+.pejabat-header h6{
+    margin-left: 2%;
+}
+
+.box-wrapper{
+    margin-top: 3%;
+ 
+    height: 910px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.box-1{
+    
+   
+    width: 700px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--cl--3--);
+   
+}
+
+.content-wrapper{
+   
+    height: 800px;
+    margin: 8%;
+
+}
+
+
+
+.image-1{
+
+    height: 500px;
+    background-image: url(GAMBAR/dosen.jpg);
+    background-size: cover;
+}
+
+.box-2{
+
+
+    width: 700px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--cl--3--);
+}
+
+.image-2{
+ height: 500px;
+ background-image: url(GAMBAR/dosen2.png);
+ background-size: cover;
+}
+
+
+.pejabat-content h6{
+    color: var(--cl--1--);
+}
+
+
+.pejabat-content {
+    margin-top: 5%;
+}
+
+/* END PEJABAT AKADEMIK */
+
+/* FOOTER */
+
+.footer{
+    margin: 0 auto;
+    max-width: 2400px;
+
+    box-sizing: border-box;
+   
+    margin-top: 5%;
+    background-color: var(--cl--3--);
+   
+}
+
+.top-layer{
+  
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    max-width: 2800px;
+
+  
+    
+}
+
+.top-left-section{
+
+   
+    width: 810px;
+    margin: 1% auto;
+}
+
+.top-left-section p{
+    font-weight: bold;
+    color: var(--cl--1--);
+}
+
+.top-right-section{
+    margin: 0 auto;
+
+    width: 810px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding-left: 10%;
+}
+
+
+.socmed-logo{
+   
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socmed-logo-item div {
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.socmed-logo-1{
+
+  
+    width: 80px;
+    height: 80px;
+    background-image: url(GAMBAR/twitter_3256013.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.socmed-logo-2{
+    
+    width: 80px;
+    height: 80px;
+    background-image: url(GAMBAR/ig.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.socmed-logo-3{
+  
+    width: 80px;
+    height: 80px;
+    background-image: url(GAMBAR/youtube.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.socmed-logo-4{
+    
+    width: 80px;
+    height: 80px;
+    background-image: url(GAMBAR/facebook.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.top-right-content h6{
+    color: var(--cl--1--);
+    margin-bottom: 3%;
+    
+}
+
+.bottom-layer{
+   
+    height: 50px;
+    display: flex;
+
+    max-width: 2800px;
+    background-color: var(--cl--4--);
+   
+}
+
+
+.bot-left-section{
+
+    width: 810px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+}
+
+
+.bot-right-section{
+
+    width: 810px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
