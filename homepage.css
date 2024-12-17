@@ -683,7 +683,7 @@ header ul li:hover .dropdown-menu ul{
     
     width: auto;
     height: 500px;
-    background-image: url(GAMBAR/tamner.jpg);
+    background-image: url(GAMBAR/tamnet.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -706,7 +706,7 @@ header ul li:hover .dropdown-menu ul{
 
     width: auto;
     height: 500px;
-    background-image: url(GAMBAR/tamner.jpg);
+    background-image: url(GAMBAR/labkom.jpg);
     background-size: cover;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
@@ -715,7 +715,7 @@ header ul li:hover .dropdown-menu ul{
 
     width: auto;
     height: 500px;
-    background-image: url(GAMBAR/tamner.jpg);
+    background-image: url(GAMBAR/ruangkelas.jpg);
     background-size: cover;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
