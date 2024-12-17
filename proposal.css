@@ -121,7 +121,7 @@ header ul li:hover .dropdown-menu ul{
     position: relative;
     width: 1540px; 
     height: 403px; 
-    background-image: linear-gradient(rgba(9, 9, 54, 0.4), rgba(5, 4, 46, 0.8)),url('Bangunan.png'); 
+    background-image: linear-gradient(rgba(9, 9, 54, 0.4), rgba(5, 4, 46, 0.8)),url("GAMBAR/GEDUNG_TI.jpeg ");
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
