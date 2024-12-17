@@ -190,11 +190,62 @@ header ul li:hover .dropdown-menu ul{
 
 /* END HEADER */
 
-/* BACKGROUND */
+/* PROPOSAL */
+
+.seminar-proposal{
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+.seminar-header{
+    margin-top: 3%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: var(--cl--4--);
+    justify-content: center;
+}
+
+.seminar-content-box{
+    margin-top: 3%;
+    height: fit-content;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.seminar-content{
+
+    text-align: justify;
+    padding: 1% 2%;
+    line-height: 2;
+
+}
+
+/* END PROPOSAL */
+
+
+/* TAHAPAN SEMINAR */
+
+.tahapan-seminar{
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+.tahapan-header{
+    margin-top: 3%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: var(--cl--4--);
+    justify-content: center;
+}
 
 
 
-/* END BACKGROUND */
+/* END TAHAPAN SEMINAR */
 
 
 /* Teks INFO TI/ PROPOSAL */
