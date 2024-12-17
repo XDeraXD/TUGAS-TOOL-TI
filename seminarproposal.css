@@ -245,63 +245,8 @@ header ul li:hover .dropdown-menu ul{
 
 
 
-/* END TAHAPAN SEMINAR */
+/* PDF */
 
-
-/* Teks INFO TI/ PROPOSAL */
-
-.image-container h1 {
-    color: var(--cl--1--); 
-    text-transform: uppercase; 
-    line-height: 1.5; 
-    margin: 0; 
-}
-
-.image-container h1 .highlight {
-    color: #F7A900; 
-}
-/* END TEKS INFO TI/ PROPOSAL */
-
-/* ISI SEMINAR PROPOSAL */
-.seminarproposal-box {
-    background-color: #ECBB4E; 
-    text-align: center auto; 
-    padding: 5 10; 
-    margin: 20px auto; 
-    width: 1450px;
-    height: 40px;
-    margin: 120px auto 30px;
-}
-
-.box {
-    background-color: white; 
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
-    padding: 10px 25px;
-    width: 100%;                         
-    max-width: 1400px;
-    margin: 20px auto; 
-  }
-  
-  p {
-    text-align: justify; 
-  }
-
-.banner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.tahapansemipro{
-    background-color: #ECBB4E; 
-    text-align: center auto; 
-    padding: 5 10; 
-    margin: 20px auto; 
-    width: 1450px;
-    height: 40px;
-    margin: 120px auto 30px;
-}
 
 .pdf-container {
     display: flex; 
@@ -320,7 +265,7 @@ header ul li:hover .dropdown-menu ul{
     border: none; 
 }
 
-/* END ISI SEMINAR PROPOSAL */
+/* END PDF */
 
 /* FOOTER */
 .footer{
