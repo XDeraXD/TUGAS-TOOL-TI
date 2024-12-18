@@ -1,4 +1,6 @@
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Noto+Sans+JP:wght@100..900&family=Playwrite+DK+Loopet:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
     --cl--1--: #ffffff;
     --cl--2--: #14171f;
     --cl--3--: #151564;
@@ -9,273 +11,259 @@
     background: var(--cl--1--);
     font-family: popp;
 }
- 
-* {
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 74px;
+}
+
+h2{
+    font-size: 64px
+}
+
+h3{
+    font-size: 54px;
+}
+
+h4{
+    font-size: 44px;
+}
+
+h5 {
+    font-size: 34px;
+}
+
+h6 {
+    font-size: 24px;
+}
+
+a{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 16px;
+}
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
 }
 
-body{
-    font-family: 'Poppins', sans-serif ;
-    background-color: var(--putih);
-    color: black;
-}
 
-/* Navbar Logo */
-.navbar {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    background-color: #FFFFFF; 
-    padding: 1rem 2rem; 
-    font-family: 'Poppins', sans-serif;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
-    position: fixed;
-    top: 0;
+/* HEADER */
+
+.header-box {
+    position: fixed; 
+    top: 0; 
     left: 0;
-    right: 0;
-    z-index: 9999;
-}
-
-/* Logo */
-.logo img {
-    height: 50px; 
-    display: block;
-}
-
-/* Link Navigasi */
-.nav-links {
+    width: 100%; 
+    background-color: #fff; 
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     display: flex; 
-    transition: 0,2s linear;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 50px; 
+    box-sizing: border-box; 
 }
 
-.nav-links a {
-    text-decoration: none; 
-    color: #151564; 
-    margin: 0 5px;
-    font-weight: 613;
+.logo {
+    margin-right: 10%; 
 }
 
-.nav-links a:hover {
-    color: #F7A900; /* Warna saat hover */
+header ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap ;
 }
 
-#hamburger-menu {
+header ul li{
+    padding: 10px 30px;
+    position: relative;
+}
+
+header ul li a{
+    text-decoration: none;
+    transition: all 0.3s;
+    color: var(--cl--3--);
+}
+
+header ul li a:hover{
+    color: var(--cl--4--);
+}
+
+.dropdown-menu{
     display: none;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-    #hamburger-menu {
-        display: inline-block; /* Tampilkan hamburger menu */
-    }
+header ul li:hover .dropdown-menu{
 
-    body {
-        margin: 0;
-        overflow-x: hidden;
-    }
-
-    /* Navigasi keluar layar secara default */
-    .navbar .nav-links {
-        position: absolute;
-        top: 100%; 
-        right: 0%; 
-        background-color: #fff; 
-        width: 30rem; 
-        height: 100vh; 
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: flex-start; 
-        padding-top: 2rem; 
-        gap: 2rem; 
-        transition: right 0.3s ease-in-out; 
-        transform: translateX(0);
-    }
-
-    /* Navigasi ditampilkan saat tombol hamburger diklik */
-    .navbar .nav-links.active {
-        transform: translateX(-100%);
-        right: 0; 
-    }
-
-    .navbar .nav-links a {
-        margin: 0; 
-        color: #151564; 
-        font-size: 1.8rem; 
-        text-decoration: none; 
-        font-weight: 500;
-    }
-
-    /* Link navigasi */
-    .navbar .nav-links a {
-        margin: 0;
-        color: #151564; 
-        font-size: 1.8rem;
-        text-decoration: none;
-        font-weight: 500;
-        transition: color 0.3s ease, background-color 0.3s ease; 
-        padding: 0.5rem 1rem; 
-        border-radius: 5px; 
-    }
-
-     /* Efek hover khusus untuk navigasi hamburger */
-    .navbar .nav-links a:hover {
-        color: #F7A900; 
-    }
-    
-    @media (max-width: 768px) {
-        #hamburger-menu {
-            display: inline-block;
-        }   
-    }
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--cl--1--);
 }
 
-
-/* Laptop */
-@media (max-width: 1366px) {
-    html{
-        font-size: 75%
-    }
+header ul li:hover .dropdown-menu ul{
+    display: block;
+    margin: 10px;
 }
 
-
-/* Tablet */
-@media (max-width: 768px) {
-    html {
-        font-size: 62.5%;
-    }
-
-    /* Tampilkan Hamburger Menu */
-    #hamburger-menu {
-        display: inline-block;
-    }
-
-    /* Atur Navigasi Menu */
-    .navbar .nav-links {
-        position: absolute;
-        top: 100%;
-        right: -100%; 
-        background-color: #FFFFFF;
-        width: 30rem;
-        height: 100vh;
-        transition: right 0.3s ease; 
-    }
-
-    /* Tampilkan Menu saat ada kelas 'active' */
-    .navbar .nav-links.active {
-        right: 0; 
-    }
+.dropdown-menu ul li{
+    width: 200px;
+    padding: 10px;
 }
 
-
-/* Mobile Phone */
-@media (max-width: 450px) {
-    html{
-        font-size: 55%
-    }
+.dropdown-menu-1{
+    display: none;
 }
 
-
-/* Hero Section Styling */
-.hero-section {
-    position: relative;
-    width: 100%;
-    height: 600px; 
-    background-image: url('GAMBAR/GEDUNG_TI2.jpeg'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-/* Overlay Transparan */
-.hero-section .overlay {
+.dropdown-menu ul li:hover  .dropdown-menu-1{
+    display: block;
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(rgba(9,9,54,0.3), rgba(5,4,46,0.7));
-    z-index: 1;
+    right: 200px;
+    background-color: var(--cl--1--);
 }
 
-/* Teks pada Hero Section */
-.hero-content {
-    position: relative;
-    z-index: 2; /* Menempatkan teks di atas overlay */
-    color: #fff;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+/* END HEADER */
+
+/* HERO */
+
+
+.hero {
+    background-image: linear-gradient(rgba(9,9,54,0.3), rgba(5,4,46,0.7)), url("GAMBAR/GEDUNG_TI.jpeg ");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 700px;
+    align-items: center;
+    background-color: var(--cl--3--);
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+    max-width: 2400px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-position: left 35%;
+    
 }
 
-.hero-content .top-text {
-    font-size: 2.5rem; 
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: #FFFFFF;
+.hero .hero-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+
+
 }
 
-.hero-content .bottom-text {
-    font-size: 2.5rem; 
-    font-weight: 700;
-    color: #F7A900;
+.hero .hero-title h4{
+    color: var(--cl--4--);
+    margin: 0;
 }
+
+.hero .hero-title h6{
+    margin-top: 5px;
+    color: var(--cl--1--);
+    
+}
+
+.hero .hero-visi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 350px;
+    
+
+}
+
+.hero .hero-visi h6{
+    color: var(--cl--4--);
+    margin: 0;
+}
+
+.hero .hero-visi p{
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    text-align: center;
+    color: var(--cl--1--);
+}
+
+/* END HERO */
+
+
+/* JADWAL */
+
+.jadwal{
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+.jadwal-header{
+    margin-top: 3%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: var(--cl--4--);
+    justify-content: center;
+}
+
+.reguler{
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+.reguler-header{
+    margin-top: 3%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: var(--cl--4--);
+    justify-content: center;
+}
+
+
+/* PDF */
+
 
 .pdf-container {
-    display: flex; /* Gunakan Flexbox */
+    display: flex; 
     justify-content: center; 
     align-items: center; 
-    width: 100%; 
-    padding: 2rem 0; 
-    background-color: #f9f9f9; /
+    margin: 0 auto 50px; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    max-width: 1400px; 
 }
 
-.pdf-container iframe {
-    width: 80%; /* Atur lebar PDF menjadi 80% dari container */
-    max-width: 900px; /* Tetapkan lebar maksimum */
-    height: 600px; /* Tetapkan tinggi PDF */
-    border: none; /* Hilangkan border di sekitar PDF */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan shadow (opsional) */
+.centered-iframe {
+    width: 90%; 
+    height: 1000px; 
+    border: none; 
 }
 
 
-.info-box {
-    background-color: #F7A900;
-    padding: 0.1rem 1rem;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.8rem; 
-    font-weight: 600px; 
-    color: black; 
-    margin-top: 5rem; 
-    margin-left: 5%;
-    margin-right: 5%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    margin-bottom: 5rem;
-}
+/* END JADWAL */
 
-.info-box2 {
-    background-color: #F7A900;
-    padding: 0.1rem 1rem;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.8rem; 
-    font-weight: 600px; 
-    color: black; 
-    margin-top: 5rem; 
-    margin-left: 5%;
-    margin-right: 5%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    margin-bottom: 3rem;
-}
 
 /* FOOTER */
 
@@ -291,7 +279,7 @@ body{
 }
 
 .top-layer{
-
+  
     height: 300px;
     display: flex;
     flex-direction: row;
@@ -311,12 +299,13 @@ body{
 .top-left-section p{
     font-weight: bold;
     color: var(--cl--1--);
-    margin-left: 10%;
 }
 
 .top-right-section{
     margin: 0 auto;
+
     width: 810px;
+    
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -393,6 +382,7 @@ body{
    
     height: 50px;
     display: flex;
+
     max-width: 2800px;
     background-color: var(--cl--4--);
    
@@ -406,7 +396,6 @@ body{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 2%;
   
 }
 
@@ -418,7 +407,6 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 2%;
 }
 
 /* END FOOTER */
