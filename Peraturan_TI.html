@@ -6,63 +6,102 @@
     <title>Peraturan TI</title>
 
 
-    <!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-
-<!-- Fether icon -->
-<script src="https://unpkg.com/feather-icons"></script>
-
-
     <link rel="stylesheet" href="Peraturan_TI.css">
 </head>
 <body>
     
-    <!-- Navbar -->
-<nav class="navbar">
-    <div class="logo">
-        <img src="GAMBAR/logo.png" alt="Logo TI" width="50">
+   <!-- HEADER -->
+ 
+
+   <header class="header-box">
+    <a href="#" class="logo"> <img src="GAMBAR/logo.png" width=100px" alt=""></a>
+    <nav class="navigation-row">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="#project">Info TI</a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="jadwal.html">Jadwal Kuliah</a></li>
+                        <li><a href="Peraturan_TI.html">Peraturan TI</a></li>
+                        <li><a href="SOP.html">SOP</a></li>
+                        <li><a href="kerjapraktek.html">Kerja Praktek</a></li>
+                        <li><a href="seminaride.html">Seminar Ide</a></li>
+                        <li><a href="seminarproposal.html">Proposal</a></li>
+                        <li><a href="tugasakhir.html">Tugas Akhir</a></li>
+                        <li><a href="submitpaper.html">Submmit Paper Buletin Teknologi Informasi</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#service">Kemahasiswaan</a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="HMTI.html">HMTI</a></li>
+                        <li><a href="tecart.html">Tecart</a></li>
+                        <li><a href="beasiswa.html">Beasiswa</a></li>
+                        <li><a href="lowongan.html">Lowongan</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#contact">Jurnal</a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="http://ojs.unud.ac.id/index.php/lontar" target="_blank">Lontar</a></li>
+                        <li><a href="http://ojs.unud.ac.id/index.php/merpati/" target="_blank">Merpati</a></li>
+                        <li><a href="https://ojs.unud.ac.id/index.php/jitter/index">JITTER</a></li>
+                    </ul>
+                    </div>
+            </li>
+     
+            <li><a href="#service">Download</a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#sertifikat">Sertifikat Akreditasi TI</a>
+                            <div class="dropdown-menu-1">
+                                <ul>
+                                    <li><a href="https://drive.google.com/file/d/1_raYYHmPMTeN6B6opPsDtCFJ-qeuawo-/view" target="_blank">BAN-PT</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1ia8OzTmwt3pJptYmJGDxk5aaPotD9KHa/view" target="_blank">LAM-INFOKOM</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="https://docs.google.com/document/d/1VOK-O6dsiUDny2zJOKlnNzD0QFVBSWch/edit" target="_blank">Download Persetujuan Maju UP</a></li>
+                        <li><a href="https://docs.google.com/document/d/1cxcXXPch10SiM9QkZNOp2ktIG29T0fE4/edit" target="_blank">Download Form Permoghonan Maju Ujian Sarjana</a></li>
+                        <li><a href="#formnilai">Download Form Nilai, Presensi, Revisi Ujian Tugas Akhir</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+
+    <!-- HOME -->
+ <section class="hero">
+    <img class = "background" src="" alt="">
+    <div class="hero-title">
+        <h1 style="color: white;">INFO TI/</h1>
+        <h1 style="color: #F7A900;">PERATURAN</h1>
     </div>
 
-    <!-- Link Navigasi di kanan -->
-    <div class="nav-links">
-        <a href="Home">Home</a>
-        <a href="Profil">Profil</a>
-        <a href="Info TI">Info TI</a>
-        <a href="Kemahasiswaan">Kemahasiswaan</a>
-        <a href="Jurnal">Jurnal</a>
-        <a href="Download">Download</a>
-        <a href="Contact">Contact</a>
-    </div>
+ </section>
 
-    <!-- Hamburger Menu -->
-    <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
-</nav>
+<!-- END HOME -->
 
-
-<!-- Selection -->
-<section class="hero-section">
-    <div class="overlay"></div>
-    <div class="hero-content">
-        <h1 class="top-text">INFO TI / </h1>
-        <h1 class="bottom-text"> PERATURAN TI </h1>
-    </div>
-</section>
 
 
 <!-- Info Box -->
-<section>
+<section class="peraturan-content">
     <div class="info-box">
-        <h2>PERATURAN TEKNOLOGI INFORMASI</h2>
+        <h6>PERATURAN TEKNOLOGI INFORMASI</h6>
     </div>
 
      <!-- Text Box untuk Peraturan -->
      <div class="container">
         <div class="rules-box">
             <h3>Peraturan yang berlaku di Jurusan Teknologi Informasi :</h3>
-            <ul>
+            <ul style="list-style: none;">
                 <li>1. Wajib berpakaian Sopan dan Rapi.</li>
                 <li>2. Memakai kemeja berkerah. Khusus untuk mahasiswa pria, baju dimasukkan.</li>
                 <li>3. Khusus hari rabu wajib menggunakan Batik/Endek.</li>

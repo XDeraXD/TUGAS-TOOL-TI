@@ -59,6 +59,18 @@ p{
 
 /* HEADER */
 
+.dropdown-menu-1{
+    display: none;
+}
+
+.dropdown-menu ul li:hover  .dropdown-menu-1{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 200px;
+    background-color: var(--cl--1--);
+}
+
 .header-box {
     position: fixed; 
     top: 0; 

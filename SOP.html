@@ -4,71 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOP TI</title>
-
-    <!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-<!-- Fether icon -->
-<script src="https://unpkg.com/feather-icons"></script>
-
-    <link rel="stylesheet" href="SOP.css">
+    <link rel="stylesheet" href="seminaride.css">
 </head>
 <body>
+    <header class="header-box">
+        <a href="#" class="logo"> <img src="GAMBAR/logo.png" width=100px" alt=""></a>
+        <nav class="navigation-row">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="#project">Info TI</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="jadwal.html">Jadwal Kuliah</a></li>
+                            <li><a href="Peraturan_TI.html">Peraturan TI</a></li>
+                            <li><a href="SOP.html">SOP</a></li>
+                            <li><a href="kerjapraktek.html">Kerja Praktek</a></li>
+                            <li><a href="seminaride.html">Seminar Ide</a></li>
+                            <li><a href="seminarproposal.html">Proposal</a></li>
+                            <li><a href="tugasakhir.html">Tugas Akhir</a></li>
+                            <li><a href="submitpaper.html">Submmit Paper Buletin Teknologi Informasi</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#service">Kemahasiswaan</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="HMTI.html">HMTI</a></li>
+                            <li><a href="tecart.html">Tecart</a></li>
+                            <li><a href="beasiswa.html">Beasiswa</a></li>
+                            <li><a href="lowongan.html">Lowongan</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#contact">Jurnal</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="http://ojs.unud.ac.id/index.php/lontar" target="_blank">Lontar</a></li>
+                            <li><a href="http://ojs.unud.ac.id/index.php/merpati/" target="_blank">Merpati</a></li>
+                            <li><a href="https://ojs.unud.ac.id/index.php/jitter/index">JITTER</a></li>
+                        </ul>
+                        </div>
+                </li>
+         
+                <li><a href="#service">Download</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="#sertifikat">Sertifikat Akreditasi TI</a>
+                                <div class="dropdown-menu-1">
+                                    <ul>
+                                        <li><a href="https://drive.google.com/file/d/1_raYYHmPMTeN6B6opPsDtCFJ-qeuawo-/view" target="_blank">BAN-PT</a></li>
+                                        <li><a href="https://drive.google.com/file/d/1ia8OzTmwt3pJptYmJGDxk5aaPotD9KHa/view" target="_blank">LAM-INFOKOM</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="https://docs.google.com/document/d/1VOK-O6dsiUDny2zJOKlnNzD0QFVBSWch/edit" target="_blank">Download Persetujuan Maju UP</a></li>
+                            <li><a href="https://docs.google.com/document/d/1cxcXXPch10SiM9QkZNOp2ktIG29T0fE4/edit" target="_blank">Download Form Permoghonan Maju Ujian Sarjana</a></li>
+                            <li><a href="#formnilai">Download Form Nilai, Presensi, Revisi Ujian Tugas Akhir</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     
-<!-- Navbar -->
-<nav class="navbar">
-    <div class="logo">
-        <img src="GAMBAR/logo.png" alt="Logo TI" width="50">
+    </header>
+
+    <!-- HOME -->
+ <section class="hero">
+    <img class = "background" src="" alt="">
+    <div class="hero-title">
+        <h1 style="color: white;">INFO TI/</h1>
+        <h1 style="color: #F7A900;">SOP</h1>
     </div>
 
-    <!-- Link Navigasi di kanan -->
-    <div class="nav-links">
-        <a href="Home">Home</a>
-        <a href="Profil">Profil</a>
-        <a href="Info TI">Info TI</a>
-        <a href="Kemahasiswaan">Kemahasiswaan</a>
-        <a href="Jurnal">Jurnal</a>
-        <a href="Download">Download</a>
-        <a href="Contact">Contact</a>
+ </section>
+
+<!-- END HOME -->
+
+<!-- ISI SEMINAR PROPOSAL -->
+
+
+<div class="tahapan-seminar">
+    <div class="tahapan-header">
+        <h6>STANDAR OPERASIONAL PROSEDUR</h6>
     </div>
-
-    <!-- Hamburger Menu -->
-    <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
-</nav>
-
-
-<!-- Selection -->
-<section class="hero-section">
-    <div class="overlay"></div>
-    <div class="hero-content">
-        <h1 class="top-text">INFO TI / </h1>
-        <h1 class="bottom-text"> SOP TI </h1>
+    <div class="tahapan-content-box">
+        <div class="tahapan content">
+            <div class="pdf-container">
+                <iframe 
+                    src="https://drive.google.com/file/d/1mrrgB69P7VQAapNkMboW1R_oDMr1gvIa/preview"
+                    class="centered-iframe"
+                    frameborder="0">
+                </iframe>
+            </div>
+        </div>
     </div>
-</section>
+</div>
 
-<!-- Box Kuning -->
-<section>
-    <div class="info-box">
-        <h2>SOP TEKNOLOGI INFORMASI</h2>
-    </div>
     
-    <!-- File PDF -->
-    <div class="pdf-container">
-        <iframe src="https://drive.google.com/file/d/1mrrgB69P7VQAapNkMboW1R_oDMr1gvIa/preview"
-        class="centered-iframe" style="width: 100%; height: 500px;" frameborder="0" ></iframe>
+
+<!-- FOOTER -->
+<div class="footer">
+    <div class="top-layer">
+        
+        <div class="top-left-section">
+            <img src="GAMBAR/logo.png" width="100px" alt="" class="logo-footer">
+            <p style="color: #F7A900;">Teknologi Informasi Jimbaran</p>
+            <br>
+            <p>Gedung Teknologi Informasi</p>
+            <p>Jalan Raya Kampus UNUD, Jimbaran, Badung, Bali</p>
+            <p>Phone: 0361-701806</p>
+            <p>Fax: -</p>
+            <p>Email: it@unud.ac.id</p>
+        </div>
+        <div class="top-right-section">
+            <div class="top-right-content">
+                <h6>Temukan kami: </h6>
+                <div class="socmed-logo">
+                    <a href="https://x.com/UdayanaUniv?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3AUdayanaUniv%7Ctwcon%5Es2" target="_blank" class="socmed-logo-item">
+                        <div class="socmed-logo-1"></div>
+                    </a>
+                    <a href="https://www.instagram.com/univ.udayana/" target="_blank" class="socmed-logo-item">
+                        <div class="socmed-logo-2"></div>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC_yevqV7vJP9yZI61eaRiyQ/featured" target="_blank" class="socmed-logo-item">
+                        <div class="socmed-logo-3"></div>
+                    </a>
+                    <a href="https://www.facebook.com/371052756276411?ref=embed_page" target="_blank" class="socmed-logo-item">
+                        <div class="socmed-logo-4"></div>
+                    </a>
+                </div>
+                
+            </div>
+
+        </div>
+
     </div>
-</section>
+    <div class="bottom-layer">
+        <div class="bot-left-section">
+            <div class="bot-left content">
+                <p style=" font-weight: bold;">USDI Udayana ©2015-2024</p>
+            </div>
+        </div>
+        <div class="bot-right-section">
+            <div class="bot-right-content">
+                <p style="font-weight: bold;">Universitas Udayana</p>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 
 
-<!-- Fether icon -->
-<script>
-    feather.replace();
-  </script>
-
-<!--Java Script  -->
-<script src="SOP.js"></script>
 </body>
 </html>
