@@ -59,6 +59,22 @@ p{
 
 /* HEADER */
 
+.header-box {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px 20px; 
+    box-sizing: border-box;
+}
+
+
 header{
     max-width: 2000px;
     margin: 0 auto;

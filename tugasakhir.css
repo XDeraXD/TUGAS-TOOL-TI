@@ -59,19 +59,23 @@ p{
 
 /* HEADER */
 
-header{
-    max-width: 2000px;
-    margin: 0 auto;
-    padding: 0 15px;
-
-
-    display: flex;
-    width: 100%;
-    height: 114px;
+.header-box {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    background-color: #fff; 
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    display: flex; 
     align-items: center;
-    justify-content: space-between;
-    padding: 0 5%;
-    box-sizing: border-box;
+    justify-content: space-evenly;
+    padding: 10px 50px; 
+    box-sizing: border-box; 
+}
+
+.logo {
+    margin-right: 10%; 
 }
 
 header ul{
